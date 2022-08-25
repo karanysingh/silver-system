@@ -1,7 +1,7 @@
 import "./form/form.scss"
 
 const Progress = ({ page, setPage }) => {
-    const widths = ["50px", "180px", "300px", "350px"]
+    const widths = ["15%", "40%", "65%", "80%"]
     return (
         <div className="progress-root">
             <div style={{ width: widths[page - 1] }} className="progress-strikthru"></div>
