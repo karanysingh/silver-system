@@ -1,0 +1,190 @@
+@import "../../App.scss";
+
+.form-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    // background-color: red;
+    margin-top: 100px;
+    padding: 0px 5%;
+}
+
+.logo-root {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border: none;
+    padding: 10px 12px;
+    margin-top: 50px;
+    width: 100%;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heading-root {
+    font-size: 30px;
+
+    span {
+        font-size: 20px;
+        color: grey;
+        font-weight: 400;
+    }
+}
+
+.progress-root {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    position: relative;
+
+    .ele-active {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        font-size: auto;
+        border-radius: 100%;
+        background-color: $primary  !important;
+        color: white;
+    }
+
+    .ele {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background-color: white;
+        font-size: auto;
+        border-radius: 100%;
+        border: 0.8px solid rgba(163, 163, 163, 0.282);
+        cursor: pointer;
+    }
+
+    .progress-strikthru {
+        position: absolute;
+        width: 50px;
+        left: 70px;
+        height: 1.1px;
+        z-index: -1;
+        background-color: $primary;
+    }
+
+    .progress-strikthru-base {
+        position: absolute;
+        left: 70px;
+        width: 350px;
+        height: 1px;
+        z-index: -2;
+        background-color: rgba(178, 178, 178, 0.445);
+    }
+}
+
+.inputBox-root {
+    width: 100%;
+    margin: 5px 0px;
+
+    h1 {
+        margin: 5px 0px;
+        font-size: 15px;
+        color: rgb(97, 97, 97);
+        text-align: left;
+        font-weight: 500;
+    }
+
+    >input {
+        padding: 12px 12px;
+        border: 1px solid rgba(128, 128, 128, 0.246);
+        font-weight: 500;
+        width: 95%;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .example-input {
+        font-weight: 500;
+        width: 100%;
+        border-radius: 4px;
+        outline: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgba(198, 198, 198, 0.256);
+        color: grey;
+        border: 1px solid rgba(128, 128, 128, 0.246);
+
+        >div {
+            width: 40%;
+            padding: 0px 12px;
+        }
+
+        >input {
+            padding: 12px 10px;
+            border: 0px solid rgba(128, 128, 128, 0.246);
+            border-left: 1px solid rgba(128, 128, 128, 0.246);
+            font-weight: 500;
+            width: 100%;
+            height: 100% !important;
+            // border-radius: 4px;
+            outline: none;
+        }
+    }
+}
+
+.form-select-root {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+
+    .form-select-active {
+        color: $primary;
+        border: 1px solid $primary  !important;
+    }
+
+    .form-select-ele {
+        border: 1px solid grey;
+        padding: 20px 30px;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 10px;
+
+        img {
+            width: 45px;
+            height: 40px;
+            margin-right: 10px;
+            margin-left: -10px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgb(97, 97, 97);
+            text-align: left;
+            font-weight: 500;
+        }
+    }
+}
