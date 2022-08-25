@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 $primary: #664DE5;
 
 .root {
@@ -6,4 +7,5 @@ $primary: #664DE5;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  font-family: 'Inter', sans-serif;
 }
